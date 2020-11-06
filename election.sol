@@ -27,7 +27,7 @@ contract Election {
         newCandidate.age = age;
         newCandidate.height = height;
         candidates[creator] = newCandidate;
-        newCandidate.push(candidate[]);
+        candidateList.push(newCandidate);
     }
     
     function getCandidate() public view returns (string memory name, string memory politicalParty, string memory state, uint age, uint height) {
